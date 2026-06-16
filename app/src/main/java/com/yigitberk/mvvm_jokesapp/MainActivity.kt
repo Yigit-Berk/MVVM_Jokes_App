@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.yigitberk.mvvm_jokesapp.screens.JokeScreen
 import com.yigitberk.mvvm_jokesapp.ui.theme.MVVM_JokesAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,8 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MVVM_JokesAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    JokeScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
