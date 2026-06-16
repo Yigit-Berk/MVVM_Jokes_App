@@ -1,4 +1,4 @@
-package com.yigitberk.mvvm_jokes
+package com.yigitberk.mvvm_jokesapp
 
 import org.junit.Test
 

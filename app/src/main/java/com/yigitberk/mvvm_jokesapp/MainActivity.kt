@@ -1,4 +1,4 @@
-package com.yigitberk.mvvm_jokes
+package com.yigitberk.mvvm_jokesapp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,19 +11,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.yigitberk.mvvm_jokes.ui.theme.MVVM_JokesTheme
-
-
-// Source -> https://sv443.net/jokeapi/v2/
-
-private val BASE_URL = "https://raw.githubusercontent.com/"
+import com.yigitberk.mvvm_jokesapp.ui.theme.MVVM_JokesAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MVVM_JokesTheme {
+            MVVM_JokesAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
                         name = "Android",
@@ -46,7 +41,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    MVVM_JokesTheme {
+    MVVM_JokesAppTheme {
         Greeting("Android")
     }
 }

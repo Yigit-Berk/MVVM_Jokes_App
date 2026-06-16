@@ -1,4 +1,4 @@
-package com.yigitberk.mvvm_jokes.ui.theme
+package com.yigitberk.mvvm_jokesapp.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
