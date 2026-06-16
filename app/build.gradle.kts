@@ -57,4 +57,18 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    val retrofitVersion = "3.0.0"
+
+    implementation ("com.squareup.retrofit2:retrofit:$retrofitVersion")
+    implementation ("com.squareup.retrofit2:converter-gson:$retrofitVersion")
+    implementation ("com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion")
+
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.10.0")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.10.0")
+
+
 }
